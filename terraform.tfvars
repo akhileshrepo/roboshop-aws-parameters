@@ -7,6 +7,9 @@ parameters = {
   "cart.dev.REDIS_HOST"        = { type = "String", value = "dev-redis-elasticache-cluster.ppugfs.0001.use1.cache.amazonaws.com" }
   "cart.dev.CATALOGUE_HOST"    = { type = "String", value = "catalogue-dev.akhildevops.online" }
   "cart.dev.CATALOGUE_PORT"    = { type = "String", value = "80" }
+  "shipping.dev.CART_ENDPOINT" = { type = "String", value = "cart-dev.akhildevops.online:80" }
+  "shipping.dev.DB_HOST"       = { type = "String", value = "dev-mysql-rds-cluster.cluster-cmscnppwjzuf.us-east-1.rds.amazonaws.com" }    ###Get it from rds cluster Database cluster endpoint
+
   ## usually passwords are not kept under git repo, we usually create a passwords manually
   ###passwords
   "docdb.dev.master_password" = { type = "SecureString", value = "roboshop1234" }
