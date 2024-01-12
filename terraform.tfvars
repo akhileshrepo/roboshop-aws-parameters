@@ -1,4 +1,4 @@
 parameters = {
   "docdb.dev.master_username" = { type = "String", value = "docdbadmin" }
-  "docdb.dev.master_password" = { type = "string", value = "roboshop1234"}
+  "docdb.dev.master_password" = { type = "String", value = "roboshop1234"}
 }
