@@ -22,7 +22,7 @@ parameters = {
 
   ##Passwords
   
-  "docdb.dev.master_password" = { type = "String", value = "roboshop1234"}
-  "rds.dev.master_password" = { type = "String",   value  = "roboshop1234"}
+  "docdb.dev.master_password" = { type = "SecureString", value = "roboshop1234"}
+  "rds.dev.master_password" = { type = "SecureString",   value  = "roboshop1234"}
 }
 
