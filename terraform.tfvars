@@ -9,7 +9,7 @@ parameters = {
   "cart.dev.CATALOGUE_HOST"    = { type = "String", value = "catalogue-dev.akhildevops.online" }
   "cart.dev.CATALOGUE_PORT"    = { type = "String", value = "80" }
   "shipping.dev.CART_ENDPOINT" = {type = "String", value = "cart-dev.akhildevops.online:80"}
-  "shipping.dev.DB_HOST"       = { type = "String", value = ""}      ##RDS Endpoint
+  "shipping.dev.DB_HOST"       = { type = "String", value = "dev-mysql-rds-cluster.cluster-cmscnppwjzuf.us-east-1.rds.amazonaws.com"}      ##RDS Endpoint
 
   "payment.dev.CART_HOST"      = {type = "String", value = "cart-dev.akhildevops.online"}
   "payment.dev.CART_PORT"      = {type = "String", value = "80"}
