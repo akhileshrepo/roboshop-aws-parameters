@@ -9,13 +9,13 @@ parameters = {
   "cart.dev.CATALOGUE_HOST"    = { type = "String", value = "catalogue-dev.akhildevops.online" }
   "cart.dev.CATALOGUE_PORT"    = { type = "String", value = "80" }
   "shipping.dev.CART_ENDPOINT" = {type = "String", value = "cart-dev.akhildevops.online:80"}
-  "shipping.dev.DB_HOST"       = { type = "String", value = "dev-mysql-rds-cluster.cluster-czhiylk864mf.us-east-1.rds.amazonaws.com"}      ##RDS Endpoint
+  "shipping.dev.DB_HOST"       = { type = "String", value = "dev-mysql-rds-cluster.cluster-czhiylk864mf.us-east-1.rds.amazonaws.com"}
 
-  "payment.dev.CART_HOST"      = {type = "String", value = "cart-dev.akhildevops.online"}
-  "payment.dev.CART_PORT"      = {type = "String", value = "80"}
-  "payment.dev.USER_HOST"      = {type = "String", value = "user-dev.akhildevops.online"}
-  "payment.dev.USER_PORT"      = {type = "String", value = "80"}
-  "payment.dev.AMQP_HOST"      = {type = "String", value = "rabbitmq-dev.akhildevops.online:80"}
+  "payment.dev.CART_HOST" = { type = "String", value = "cart-dev.akhildevops.online" }
+  "payment.dev.CART_PORT" = { type = "String", value = "80" }
+  "payment.dev.USER_HOST" = { type = "String", value = "user-dev.akhildevops.online" }
+  "payment.dev.USER_PORT" = { type = "String", value = "80" }
+  "payment.dev.AMQP_HOST" = { type = "String", value = "rabbitmq-dev.akhildevops.online" }
 
 
   "rabbitmq.dev.AMQP_USER"      = {type = "String", value = "roboshop"}
