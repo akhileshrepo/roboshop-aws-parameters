@@ -40,7 +40,7 @@ parameters = {
 
   ##Appversion
 
-  "shipping.dev.appVersion" = { type = "String", value = "1.0.1"}
+  "shipping.dev.appVersion" = { type = "String", value = "1.0.2"}
   "payment.dev.appVersion" = { type = "String", value = "1.0.1"}
   "cart.dev.appVersion" = { type = "String", value = "1.0.1"}
   "user.dev.appVersion" = { type = "String", value = "1.0.3"}
