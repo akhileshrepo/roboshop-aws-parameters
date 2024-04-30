@@ -3,5 +3,6 @@ resource "aws_ssm_parameter" "main" {
   name     = each.key
   type     = each.value["type"]
   value    = each.value["value"]
+  key_id   = ""
 }
 
