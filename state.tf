@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "akhiltest.com"
-    key    = "aws-parameters-new/terraform.tfstate"
+    bucket = "tf-roboshop-state"
+    key    = "aws-parameters/state.tf"
     region = "us-east-1"
   }
 }
