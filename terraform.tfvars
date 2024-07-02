@@ -1,7 +1,7 @@
 parameters = {
   "docdb.dev.master_username" = { type = "String", value = "docdbadmin" }
   "rds.dev.database_name" = { type = "String", value = "dummy" }
-  "rds.dev.master_username" = { type = "String", value = "rdsadmin" }
+  "rds.dev.master_username" = { type = "String", value = "devadmin" }
 
 
   #Password
