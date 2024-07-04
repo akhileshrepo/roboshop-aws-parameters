@@ -17,8 +17,8 @@ parameters = {
   "payment.dev.AMQP_HOST"        = { type = "String", value = "rabbitmq-dev.akhildevops.online" }
 
 
-  "rabbitmq.dev.AMQP_USER"        = { type = "String", value = "" }
-  "rabbitmq.dev.AMQP_PASS"        = { type = "String", value = "" }
+  "rabbitmq.dev.AMQP_USER"        = { type = "String", value = "roboshop" }
+  "rabbitmq.dev.AMQP_PASS"        = { type = "String", value = "roboshop123" }
 
   #Password
   "docdb.dev.master_password" = { type = "SecureString", value = "roboshop1234" }
