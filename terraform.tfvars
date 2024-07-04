@@ -10,6 +10,15 @@ parameters = {
   "shipping.dev.CART_ENDPOINT"  = { type = "String", value = "cart-dev.akhildevops.online:8080" }
   "shipping.dev.DB_HOST"        = { type = "String", value = "rds-endpoint" }
 
+  "payment.dev.CART_HOST"        = { type = "String", value = "cart-dev.akhildevops.online" }
+  "payment.dev.CART_PORT"        = { type = "String", value = "" }
+  "payment.dev.USER_HOST"        = { type = "String", value = "" }
+  "payment.dev.USER_PORT"        = { type = "String", value = "" }
+  "payment.dev.AMQP_HOST"        = { type = "String", value = "" }
+
+
+  "rabbitmq.dev.AMQP_USER"        = { type = "String", value = "" }
+  "rabbitmq.dev.AMQP_PASS"        = { type = "String", value = "" }
 
   #Password
   "docdb.dev.master_password" = { type = "SecureString", value = "roboshop1234" }
