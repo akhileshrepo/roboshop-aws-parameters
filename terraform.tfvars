@@ -7,7 +7,7 @@ parameters = {
   "cart.dev.REDIS_HOST"         = { type = "String", value = "ELASTICACHE-end point" }
   "cart.dev.CATALOGUE_HOST"     = { type = "String", value = "catalogue-dev.akhildevops.online" }
   "cart.dev.CATALOGUE_PORT"     = { type = "String", value = "80" }
-  "shipping.dev.CART_ENDPOINT"  = { type = "String", value = "cart-dev.akhildevops.online:8080" }
+  "shipping.dev.CART_ENDPOINT"  = { type = "String", value = "cart-dev.akhildevops.online:80" }
   "shipping.dev.DB_HOST"        = { type = "String", value = "rds-endpoint" }
 
   "payment.dev.CART_HOST"        = { type = "String", value = "cart-dev.akhildevops.online" }
