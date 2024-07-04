@@ -3,12 +3,12 @@ parameters = {
   "docdb.dev.endpoint"          = { type = "String", value = "dev-docdb-cluster.cluster-cjewe4ou21g2.us-east-1.docdb.amazonaws.com" }
   "rds.dev.database_name"       = { type = "String", value = "dummy" }
   "rds.dev.master_username"     = { type = "String", value = "devadmin" }
-  "user.dev.REDIS_HOST"         = { type = "String", value = "ELASTICACHE-end point" }
-  "cart.dev.REDIS_HOST"         = { type = "String", value = "ELASTICACHE-end point" }
+  "user.dev.REDIS_HOST"         = { type = "String", value = "dev-redis-elasticache-cluster.eoml7n.0001.use1.cache.amazonaws.com" }
+  "cart.dev.REDIS_HOST"         = { type = "String", value = "dev-redis-elasticache-cluster.eoml7n.0001.use1.cache.amazonaws.com" }
   "cart.dev.CATALOGUE_HOST"     = { type = "String", value = "catalogue-dev.akhildevops.online" }
   "cart.dev.CATALOGUE_PORT"     = { type = "String", value = "80" }
   "shipping.dev.CART_ENDPOINT"  = { type = "String", value = "cart-dev.akhildevops.online:80" }
-  "shipping.dev.DB_HOST"        = { type = "String", value = "rds-endpoint" }
+  "shipping.dev.DB_HOST"        = { type = "String", value = "dev-mysql-rds-cluster.cluster-cjewe4ou21g2.us-east-1.rds.amazonaws.com" }
 
   "payment.dev.CART_HOST"        = { type = "String", value = "cart-dev.akhildevops.online" }
   "payment.dev.CART_PORT"        = { type = "String", value = "80" }
