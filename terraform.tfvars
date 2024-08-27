@@ -45,21 +45,21 @@ parameters = {
   #Prod env
 
   "docdb.prod.master_username"   = { type = "String", value = "docdbadmin" }
-  "docdb.prod.endpoint"          = { type = "String", value = "dev-docdb-cluster.cluster-cjewe4ou21g2.us-east-1.docdb.amazonaws.com" }
+  "docdb.prod.endpoint"          = { type = "String", value = "prod-docdb-cluster.cluster-cjewe4ou21g2.us-east-1.docdb.amazonaws.com" }
   "rds.prod.database_name"       = { type = "String", value = "dummy" }
   "rds.prod.master_username"     = { type = "String", value = "devadmin" }
-  "user.prod.REDIS_HOST"         = { type = "String", value = "dev-redis-elasticache-cluster.eoml7n.0001.use1.cache.amazonaws.com" }
-  "cart.prod.REDIS_HOST"         = { type = "String", value = "dev-redis-elasticache-cluster.eoml7n.0001.use1.cache.amazonaws.com" }
-  "cart.prod.CATALOGUE_HOST"     = { type = "String", value = "catalogue-dev.vinithaws.online" }
+  "user.prod.REDIS_HOST"         = { type = "String", value = "prod-redis-elasticache-cluster.eoml7n.0001.use1.cache.amazonaws.com" }
+  "cart.prod.REDIS_HOST"         = { type = "String", value = "prod-redis-elasticache-cluster.eoml7n.0001.use1.cache.amazonaws.com" }
+  "cart.prod.CATALOGUE_HOST"     = { type = "String", value = "catalogue-prod.vinithaws.online" }
   "cart.prod.CATALOGUE_PORT"     = { type = "String", value = "80" }
-  "shipping.prod.CART_ENDPOINT"  = { type = "String", value = "cart-dev.vinithaws.online:80" }
-  "shipping.prod.DB_HOST"        = { type = "String", value = "dev-mysql-rds-cluster.cluster-cjewe4ou21g2.us-east-1.rds.amazonaws.com" }
+  "shipping.prod.CART_ENDPOINT"  = { type = "String", value = "cart-prod.vinithaws.online:80" }
+  "shipping.prod.DB_HOST"        = { type = "String", value = "prod-mysql-rds-cluster.cluster-cjewe4ou21g2.us-east-1.rds.amazonaws.com" }
 
-  "payment.prod.CART_HOST"        = { type = "String", value = "cart-dev.vinithaws.online" }
+  "payment.prod.CART_HOST"        = { type = "String", value = "cart-prod.vinithaws.online" }
   "payment.prod.CART_PORT"        = { type = "String", value = "80" }
-  "payment.prod.USER_HOST"        = { type = "String", value = "user-dev.vinithaws.online" }
+  "payment.prod.USER_HOST"        = { type = "String", value = "user-prod.vinithaws.online" }
   "payment.prod.USER_PORT"        = { type = "String", value = "80" }
-  "payment.prod.AMQP_HOST"        = { type = "String", value = "rabbitmq-dev.vinithaws.online" }
+  "payment.prod.AMQP_HOST"        = { type = "String", value = "rabbitmq-prod.vinithaws.online" }
 
 
   "rabbitmq.prod.AMQP_USER"        = { type = "String", value = "roboshop" }
