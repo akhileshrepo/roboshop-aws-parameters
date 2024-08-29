@@ -42,35 +42,39 @@ parameters = {
   "catalogue.dev.appVersion" = { type = "String", value = "1.0.5" }
   "frontend.dev.appVersion"  = { type = "String", value = "1.0.0" }
 
-  #Prod env
+  ## PROD ENV
+  "docdb.prod.master_username"  = { type = "String", value = "docdbadmin" }
+  "docdb.prod.endpoint"         = { type = "String", value = "prod-docdb-cluster.cluster-cjewe4ou21g2.us-east-1.docdb.amazonaws.com" }
+  "rds.prod.endpoint"       = { type = "String", value = "prod-mysql-rds-cluster.cluster-cjewe4ou21g2.us-east-1.rds.amazonaws.com" }
+  "rds.prod.master_username"    = { type = "String", value = "devadmin" }
+  "rds.prod.database_name"      = { type = "String", value = "dummy" }
+  "user.prod.REDIS_HOST"        = { type = "String", value = "prod-redis-elasticache-cluster.eoml7n.0001.use1.cache.amazonaws.com" }
+  "cart.prod.REDIS_HOST"        = { type = "String", value = "prod-redis-elasticache-cluster.eoml7n.0001.use1.cache.amazonaws.com" }
+  "cart.prod.CATALOGUE_HOST"    = { type = "String", value = "catalogue" }
+  "cart.prod.CATALOGUE_PORT"    = { type = "String", value = "80" }
+  "shipping.prod.CART_ENDPOINT" = { type = "String", value = "cart:80" }
+  "shipping.prod.DB_HOST"       = { type = "String", value = "prod-mysql-rds-cluster.cluster-cjewe4ou21g2.us-east-1.rds.amazonaws.com" }
+  "catalogue.prod.MONGO_URL"    = { type = "SecureString", value = "mongodb://docdbadmin:roboshop1234@prod-docdb-cluster.cluster-cjewe4ou21g2.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false"}
+  "catalogue.prod.DOCUMENTDB" = {type = "String", value = "true"}
 
-  "docdb.prod.master_username"   = { type = "String", value = "docdbadmin" }
-  "docdb.prod.endpoint"          = { type = "String", value = "prod-docdb-cluster.cluster-cjewe4ou21g2.us-east-1.docdb.amazonaws.com" }
-  "rds.prod.database_name"       = { type = "String", value = "dummy" }
-  "rds.prod.master_username"     = { type = "String", value = "devadmin" }
-  "user.prod.REDIS_HOST"         = { type = "String", value = "prod-redis-elasticache-cluster.eoml7n.0001.use1.cache.amazonaws.com" }
-  "cart.prod.REDIS_HOST"         = { type = "String", value = "prod-redis-elasticache-cluster.eoml7n.0001.use1.cache.amazonaws.com" }
-  "cart.prod.CATALOGUE_HOST"     = { type = "String", value = "catalogue-prod.vinithaws.online" }
-  "cart.prod.CATALOGUE_PORT"     = { type = "String", value = "80" }
-  "shipping.prod.CART_ENDPOINT"  = { type = "String", value = "cart-prod.vinithaws.online:80" }
-  "shipping.prod.DB_HOST"        = { type = "String", value = "prod-mysql-rds-cluster.cluster-cjewe4ou21g2.us-east-1.rds.amazonaws.com" }
+  "user.prod.MONGO_URL"    = { type = "SecureString", value = "mongodb://docdbadmin:roboshop1234@prod-docdb-cluster.cluster-cjewe4ou21g2.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false"}
+  "user.prod.DOCUMENTDB" = {type = "String", value = "true"}
 
-  "payment.prod.CART_HOST"        = { type = "String", value = "cart-prod.vinithaws.online" }
-  "payment.prod.CART_PORT"        = { type = "String", value = "80" }
-  "payment.prod.USER_HOST"        = { type = "String", value = "user-prod.vinithaws.online" }
-  "payment.prod.USER_PORT"        = { type = "String", value = "80" }
-  "payment.prod.AMQP_HOST"        = { type = "String", value = "rabbitmq-prod.vinithaws.online" }
+  "payment.prod.CART_HOST" = { type = "String", value = "cart" }
+  "payment.prod.CART_PORT" = { type = "String", value = "80" }
+  "payment.prod.USER_HOST" = { type = "String", value = "user" }
+  "payment.prod.USER_PORT" = { type = "String", value = "80" }
+  "payment.prod.AMQP_HOST" = { type = "String", value = "rabbitmq-prod.vinithaws.online" }
 
+  "rabbitmq.prod.AMQP_USER" = { type = "String", value = "roboshop" }
+  "rabbitmq.prod.AMQP_PASS" = { type = "SecureString", value = "roboshop123" }
 
-  "rabbitmq.prod.AMQP_USER"        = { type = "String", value = "roboshop" }
-  "rabbitmq.prod.AMQP_PASS"        = { type = "String", value = "roboshop123" }
-
-  #Password
+  ## Usually the passwords are not at all preferred to keep under git repo., Usually in orgs we always create passwords in manual way whomever have access. In class we keep it here for easy reference
+  ## Passwords
   "docdb.prod.master_password" = { type = "SecureString", value = "roboshop1234" }
-  "rds.prod.master_password"   = { type = "String", value = "roboshop1234" }
+  "rds.prod.master_password"   = { type = "SecureString", value = "roboshop1234" }
 
-
-  #Nexus
+  ##Nexus
   "nexus.prod.username" = { type = "String", value = "admin" }
   "nexus.prod.password" = { type = "SecureString", value = "admin123" }
 
@@ -82,4 +86,3 @@ parameters = {
   "catalogue.prod.appVersion" = { type = "String", value = "1.0.5" }
   "frontend.prod.appVersion"  = { type = "String", value = "1.0.0" }
 }
-
